@@ -1,0 +1,41 @@
+body {
+  background-color: aqua;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+}
+#image {
+  width: 100%;
+  height: 200px;
+  background-size: 100% 100%;
+  top: 0px;
+}
+.alpha {
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  font-size: 70px;
+  float: left;
+}
+#output {
+  margin-top: 200px;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background-size: 100% 100%;
+  animation: rotate5s infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

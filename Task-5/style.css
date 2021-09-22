@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+}
+
+.title {
+    background-color: brown;
+    height: auto;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+.title .title-text:hover {
+    color: whitesmoke;
+    transform: scale(1.05);
+}
+
+.sub-title {
+    font-size: 25px;
+    text-align: center;
+    color: red;
+    background-color: white;
+}
+
+p {
+    font-family: 'Book Antiqua';
+    text-align: right;
+}
+
+.pout {
+    text-align: center;
+}
+
+p:hover {
+    color: whitesmoke;
+    transform: scale(1.05);
+}
+
+input {
+    width: 100px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Book Antiqua';
+}
+
+.hovercss:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.container-body {
+    margin: 100px;
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 400px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.col-md-6 {
+    padding: 40px;
+    float: left;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}

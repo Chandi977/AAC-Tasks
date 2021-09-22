@@ -1,0 +1,49 @@
+html{
+    background-color: rgb(14, 235, 198);
+}
+.main-title{
+    width: 100%; 
+    height: auto;
+    background-color: brown;
+    color: white; 
+    float: left;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+.main-title:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.table-heading{
+    font-size: 25px;
+    color: black;
+    background-color: red;
+}
+.table-heading:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.table-heading-data{
+    color: white;
+    background-color:black;
+    text-align: center;
+}
+
+.table-heading-data:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.foot{
+    width: 100%; 
+    height: 50px; 
+    float: left;
+    text-align: center;
+}
+.foot:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease; 
+}

@@ -1,0 +1,137 @@
+ html{
+    background-color: rgb(14, 235, 198);
+}
+.head-title{
+    width: 100%; 
+    height: 150px;
+    float: left;
+    background-color: crimson;
+}
+
+.head-title-text{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+.head-title-text:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: aliceblue;
+    cursor: pointer;
+}
+.the-bar{
+    padding: 15px;
+}
+.left-bar{
+    width: 20%; 
+    height: 170px; 
+    background-color: red; 
+    float: left;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+.left-bar:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: aliceblue;
+    cursor: pointer;
+}
+.middle-bar{
+    width: 60%; 
+    height: 170px; 
+    background-color: burlywood; 
+    text-align: center;
+    font-size: 30px;
+    border-radius: 5px;
+    float: left;
+    padding: 50px 0px 0px 0px;
+}
+.middle-bar:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: aliceblue;
+    cursor: pointer;
+}
+.right-bar{
+    width: 20%; 
+    height: 170px; 
+    background-color: red; 
+    float: left;
+    font-size: 30px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+}
+.right-bar:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: aliceblue;
+    cursor: pointer;
+}
+.img-content{ 
+    height: 250px; 
+    float: left;
+    padding: 5px 15px 15px 60px;
+}
+
+.img-content-a{
+    border-radius: 6px
+}
+.img-content-a:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.big-img{
+    width: 100%; 
+    height: auto; 
+    float: left;
+}
+.big-img-image{
+    padding: 10px 0px 30px 0px ;
+    float: left; 
+    width: 70%; 
+    height: 250px;
+    border-radius: 6px;
+}
+.big-img-image:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: aliceblue;
+    cursor: pointer;
+}
+.big-img-text{
+    float: left; 
+    width: 30%;
+    font-size: 40px;
+    padding-top: 70px;
+    height: auto;
+}
+.big-img-text:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: aliceblue;
+    cursor: pointer;
+}
+.foot{
+   width: 100%; 
+   height: 150px; 
+   background-color: crimson;
+   text-align: center;
+   float: left; 
+}
+.foot .foot-text{
+    font-style: italic;
+    color: black;
+    font-size: 40px;
+    padding-top: 50px;
+}
+.foot .foot-text:hover{
+     transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: aliceblue;
+    cursor: pointer;
+}

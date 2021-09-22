@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+</head>
+<section>
+    <div class="title">
+        <h2 class="title-text">Welcome</h2>
+    </div>
+    <div class="sub-title">
+        <div class="hovercss">
+            <h3>Adityapur Auto-Cluster Task - 5</h3>
+            <h3>Internship</h3>
+        </div>
+    </div>
+</section>
+
+<body class="bg-dark">
+    <div class="container-body badge-danger">
+        <div class="row align-items-center">
+            <div class="col-md-6" style="float: left;">
+                <h3>
+                    <p> Name = <input type="text" id="name"></p>
+                </h3>
+                <h3>
+                    <p>Hindi = <input type="text" maxlength="3" id="hin"></p>
+                </h3>
+                <h3>
+                    <p>English = <input type="text" maxlength="3" id="eng"></p>
+                </h3>
+                <h3>
+                    <p>Math = <input type="text" maxlength="3" id="math"></p>
+                </h3>
+                <h3>
+                    <p>Science = <input type="text" maxlength="3" id="sci"></p>
+                </h3>
+                <h3>
+                    <p>Social Studies = <input type="text" maxlength="3" id="sst"></p>
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <h3>Total Marks <p class="pout" id="total"></p>
+                </h3>
+                <h3>Average Marks <p class="pout" id="avg"></p>
+                </h3>
+                <h3>Final Result <p class="pout" id="result"></p>
+                </h3>
+                <h3>
+                    <button class="btn btn-primary" onclick="analyse()">Analise</button>
+                    <button onclick="clr()" class="btn btn-primary">Clear</button>
+                </h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

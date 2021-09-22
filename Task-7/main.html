@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <form action="home.php" method="post">
+        <div class="col-md-12">
+            <input type="text" name="t1">
+            <input type="text" name="t2" value="<?php echo @$result;?>">
+            <input type="submit" name="t3" value="sub">
+        </div>
+    </form>
+</body>
+
+</html>
