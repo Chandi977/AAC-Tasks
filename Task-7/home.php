@@ -19,7 +19,6 @@
     <input type="text" name="t1">
     <input type="text" name="t2" value="<?php echo @$result; ?>">
     <input type="submit" name="sub" value="Enter">
-
   </form>
 </body>
 </html>
