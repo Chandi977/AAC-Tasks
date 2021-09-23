@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(14, 235, 198);
+    height: auto;
+    scroll-behavior: smooth;
+}
+
+.heads {
+    background-color: red;
+    height: 100px;
+}
+
+.head-text {
+    text-align: center;
+    top: 0%;
+    height: 50px;
+    color: aliceblue;
+    font-size: 80px;
+}
+
+.container-body {
+    margin: 100px;
+    margin-top: 100px;
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 400px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.col-md-6 {
+    padding-left: 10%;
+    float: left;
+    text-align: left;
+    padding-top: 50px;
+}
+
+.something-text {
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.something-text:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.btn-Create-table,
+.btn-Insert-data {
+    margin-top: 10px;
+}
+
+.foot {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+
+.foot-text {
+    text-align: center;
+    height: 20px;
+    font-size: 70px;
+    color: aliceblue;
+}
