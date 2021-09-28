@@ -12,18 +12,18 @@ body {
 .head-text {
     text-align: center;
     top: 0%;
-    height: 50px;
     color: aliceblue;
-    font-size: 80px;
+    font-size: 30px;
 }
 
 .container-body {
     margin: 100px;
     margin-top: 100px;
     border-radius: 20px;
+    box-shadow: 0px -1px 12px 6px rgba(237, 232, 232, 0.64);
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 5s ease infinite;
     height: 700px;
 }
 
@@ -39,17 +39,27 @@ body {
     }
 }
 
-.col-md-6 {
+.col-md-6,
+.col-md-4 {
     padding-left: 10%;
     float: left;
     text-align: left;
-    padding-top: 50px;
+    padding-top: 40px;
+}
+
+.col-md-4 a {
+    color: white;
+    font-size: 200px;
+}
+
+.col-md-4 a h1 {
+    font-size: 60px;
 }
 
 .something-text {
     color: white;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .something-text:hover {
@@ -57,6 +67,37 @@ body {
     transition: all 0.3s ease;
     color: aliceblue;
     cursor: pointer;
+}
+
+.out-com:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: antiquewhite;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .btn-Create-table,

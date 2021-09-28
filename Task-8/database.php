@@ -1,56 +1,28 @@
 <?php
-$conn=mysqli_connect("localhost","root","","chandi");
-$sql_create="CREATE TABLE firstform(pid int PRIMARY KEY, pname varchar(255), pemail varchar(255), pphone int)";
-
-$sql_drop="Drop table FirstForm";
 $result="";
 $resulterror="";
-if (isset($_POST["create"])) {
-    {
-        if (mysqli_query($conn,$sql_create)) {
-            $result="Database Table is Created.";
-            $resulterror="NO error Seen";
-        } else {
-            $result="Something Went Wrong";
-            $resulterror=mysqli_error($conn);
-        }
-        
-    }
-}
 
-if (isset($_POST["insert"])) {
+if (isset($_POST["Insert"])) {
     {
-        $pid=$_POST["id"];
+        $conn=mysqli_connect("localhost","root","","chandi");
+        $proll=$_POST["roll"];
         $pname=$_POST["name"];
         $pemail=$_POST["email"];
-        $pphone=$_POST["phone"];
         $paddress=$_POST["address"];
-        $paage=$_POST["age"];
-        $sql_insert="INSERT INTO `firstform` (`pid`, `pname`, `pemail`, `pphone`) VALUES ($pid, '$pname', '$pemail', $pphone)";
+        $pphone=$_POST["phone"];
+        // $sql_insert="INSERT INTO charan(id, name, branch, phno) VALUES (2,'Chandi','BCA',87333)";
+        // $sql_insert="INSERT INTO charan(id,name,branch,phno) VALUES ($pid,'$pname','$pbranch',$pphone)";
+        $sql_insert="INSERT INTO `charan`(`Roll`, `Name`, `Email`, `Address`, `phno`) VALUES ($proll,'$pname','$pemail','$paddress',$pphone)";
         if (mysqli_query($conn,$sql_insert)) {
             $result="Data Inserted Sucessfully.";
             $resulterror="NO error Seen";
         } else {
             $result="Something Went Wrong";
-            $resulterror=mysqli_error($conn);
+            echo $resulterror=mysqli_error($conn);
         }
         
     }
 }
-
-if (isset($_POST["drop"])) {
-    {
-        if (mysqli_query($conn,$sql_drop)) {
-            $result="Table Dropped Sucessfully.";
-            $resulterror="NO error Seen";
-        } else {
-            $result="Something Went Wrong";
-            $resulterror=mysqli_error($conn);
-        }
-        
-    }
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -80,26 +52,27 @@ if (isset($_POST["drop"])) {
         <form action="database.php" method="post">
             <div class="col-md-6">
                 <div>
-                    <h2 class="something-text"> ID :- <input type="text" name="id"></h2>
+                    <h2 class="something-text"> ID :- <input type="number" name="roll"></h2>
                 </div>
                 <div>
                     <h2 class="something-text"> Name :- <input type="text" name="name"></h2>
                 </div>
                 <div>
-                    <h2 class="something-text">Email :- <input type="text" name="email"></h2>
+                    <h2 class="something-text">Email :- <input type="email" name="email"></h2>
                 </div>
                 <div>
-                    <h2 class="something-text"> Mobile no. :- <input type="text" name="phone"></h2>
+                    <h2 class="something-text">Address :- <input type="text" name="address"></h2>
+                </div>
+                <div>
+                    <h2 class="something-text"> Mobile no. :- <input type="number" name="phone"></h2>
                 </div>
             </div>
             <div class="col-md-6">
                 <h2 class="something-text">Output</h2>
                 <h3 class="something-text"><input type="text" value="<?php echo @$result; ?>"></h3>
                 <h3 class="something-text"><input type="text" style="width: 500px;" value="<?php echo @$resulterror; ?>"></h3>
-
-                <input class="btn-Create-table" type="submit" name="create" value="Create">
-                <input class="btn-Insert-data" type="submit" name="insert" value="Insert">
-                <input class="btn-Insert-data" type="submit" name="drop" value="Drop">
+                <input class="btn-Insert-data" type="submit" name="Insert" value="Insert">
+                
             </div>
         </form>
     </div>
